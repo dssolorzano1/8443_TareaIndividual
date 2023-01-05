@@ -150,7 +150,9 @@
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Definicion XML</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Definicion JSON</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-3" data-toggle="tab">Tablas de diferencias</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-1-0" data-toggle="tab">Vamos a aprender </a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-1-0" data-toggle="tab">Vamos a aprender XML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-3-3" data-toggle="tab">Vamos a aprender JSON</a></li>
+
                
               
             </div>
@@ -204,24 +206,27 @@
                 </div>
                   
                   <div class="tab-pane fade" id="tabs-1-0"><h4>Ejemplo</h4>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-                <script>
-                $(document).ready(function(){
-                  $("#btn1").click(function(){
-                    alert("Text: " + $("#test").text());
-                  });
-                  $("#btn2").click(function(){
-                    alert("HTML: " + $("#test").html());
-                  });
-                });
-                </script>
-                </head>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <note>
+                  <to>Tove</to>
+                  <from>Jani</from>
+                  <heading>Reminder</heading>
+                  <body>Don't forget me this weekend!</body>
+                </note>
+                </div>
+
+                <div class="tab-pane fade" id="tabs-3-3"><h4>Ejemplo 5</h4>
                 <body>
+                <br>
+                <h3>Acceso al objeto JavaScript</h3>
+                <p id="demo"></p>
 
-                <p id="test">Este parrafo tiene resalta en <b>negrilla</b>.</p>
+                <script>
+                const myObj = {name:"Deivy", age:21, city:"La Marin"};
+                document.getElementById("demo").innerHTML = myObj.name;
+                </script>
 
-                <button id="btn1">Ver Texto</button>
-                <button id="btn2">Ver Html</button>
+                </body>
                 </div>
 
               </div>
@@ -240,8 +245,7 @@
               
               <ul class="nav list-category list-category-down-md-inline-block">
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-5" data-toggle="tab">Definicion</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-6" data-toggle="tab">Establecer Contenido</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-7" data-toggle="tab">Establecer Atributos</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-6" data-toggle="tab">Codigo de AJAX</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="#tabs-2-0" data-toggle="tab">Vamos a aprender </a></li>
                
               
@@ -250,48 +254,33 @@
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">
                 <div class="tab-pane fade show active" id="tabs-4-5">
-                  <h4>JQUERY - SET  </h4>
-                  <p>Los tres métodos jQuery: text(), html()y val(), también vienen con una función de devolución de llamada. La función de devolución de llamada tiene dos parámetros: el índice del elemento actual en la lista de elementos seleccionados y el valor original (antiguo). Luego devuelve la cadena que desea usar como el nuevo valor de la función. </p>
+                  <h4>AJAX</h4>
+                  <p>JavaScript Asíncrono + XML (AJAX) no es una tecnología por sí misma, es un término que describe un nuevo modo de utilizar conjuntamente varias tecnologías existentes. Esto incluye: HTML o XHTML, CSS, JavaScript, DOM, XML, XSLT, y lo más importante, el objeto XMLHttpRequest. Cuando estas tecnologías se combinan en un modelo AJAX, es posible lograr aplicaciones web capaces de actualizarse continuamente sin tener que volver a cargar la página completa. Esto crea aplicaciones más rápidas y con mejor respuesta a las acciones del usuario.</p>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-6"><h4>Establecer contenido </h4><p>Usaremos los mismos tres métodos de la página anterior para configurar el contenido ::
-                <li>text()- Establece o devuelve el contenido de texto de los elementos seleccionados </li>
-                <li> html()- Establece o devuelve el contenido de los elementos seleccionados (incluido el marcado HTML)</li>
-                <li>Establece o devuelve el valor de los campos de formulario </li>
-                <p>El siguiente ejemplo demuestra cómo establecer contenido con los métodos jQuery text(), html() y :val() </p>
+                <div class="tab-pane fade" id="tabs-4-6"><h4>Codigo de AJAX </h4><p> La página HTML contiene una sección < div> y un < button>. La sección < div> se utiliza para mostrar información de un servidor. El < button> llama a una función (si se hace clic en él). La función solicita datos de un servidor web y los muestra:</p>
 </p>
-                  <img src="images/set1.png" alt="" width="635" height="218"/>
-                </div>
-                <div class="tab-pane fade" id="tabs-4-7"><h4>Establecer atributos </h4><p>El método jQuery attr()también se usa para establecer/cambiar valores de atributos.El siguiente ejemplo muestra cómo cambiar (establecer) el valor del atributo href en un enlace::</p>
-                <img src="images/set2.png" alt="" width="635" height="218"/>
+                  <img src="images/ajax1.png" alt="" width="635" height="218"/>
+                  <img src="images/ajax2.png" alt="" width="635" height="218"/>
                 </div>
                 
                 <div class="tab-pane fade" id="tabs-2-0"><h4>Ejemplo</h4>
                 
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                <div id="demo">
+                <h2>The XMLHttpRequest Object</h2>
+                <button type="button" onclick="loadDoc()">Change Content</button>
+                </div>
+
                 <script>
-                $(document).ready(function(){
-                  $("#btn3").click(function(){
-                    $("#test1").text("Hola Bienvenido a jquery!");
-                  });
-                  $("#btn4").click(function(){
-                    $("#test2").html("<b>Sigue aprendiendo mas!</b>");
-                  });
-                  $("#btn5").click(function(){
-                    $("#test3").val("Lo mejor en contenido");
-                  });
-                });
+                function loadDoc() {
+                  const xhttp = new XMLHttpRequest();
+                  xhttp.onload = function() {
+                    document.getElementById("demo").innerHTML =
+                    this.responseText;
+                  }
+                  xhttp.open("GET", "ajax_info.txt");
+                  xhttp.send();
+                }
                 </script>
-                </head>
-                <body>
-
-                <p id="test1">Pulsa el boton Text</p>
-                <p id="test2">Pulsa el boton HTML</p>
-
-                <p>Input field: <input type="text" id="test3" value="Pulsa el boton cambiar"></p>
-
-                <button id="btn3">Cambiar Text</button>
-                <button id="btn4">Cmabiar HTML</button>
-                <button id="btn5">Cambiar los valores</button>
                 </div>
 
 
